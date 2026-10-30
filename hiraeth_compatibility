@@ -1,0 +1,229 @@
+# Historic Invasions x Hiraeth - updated for current Hiraeth (4.0) + Historic Invasions Fix and Addon (by PreFire)
+# Translates Historic Invasions (+ Fix and Addon) invader dynasty perks to Hiraeth - Dynasty Legacies Overhaul's
+# redesigned tracks, so invader dynasties get the right legacies. Each effect is a copy of the current HI / HI Fix
+# version with only the perk keys changed (same track, same position in Hiraeth's tree). RICE / Royal Court branches kept.
+# Mapping: warfare 1-5 -> hth_warfare_legacy_1, _2, _3, warfare_legacy_3, hth_warfare_legacy_5 | glory_legacy_1 -> law_legacy_1
+#          erudition 1-3 -> hth_erudition_legacy_1, _2, kin_legacy_2 | law_legacy_1 -> hth_law_legacy_1 | guile_legacy_1 -> hth_guile_legacy_1
+#          ep1_culture_legacy_X unchanged (Hiraeth keeps those keys on the same track)
+
+# Historic Invasions Fix and Addon, 09_almohad_effects.txt
+almohad_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_erudition_legacy_1
+	add_dynasty_perk = hth_erudition_legacy_2
+	add_dynasty_perk = kin_legacy_2
+}
+
+# Historic Invasions Fix and Addon, 08_almoravid_effects.txt
+almoravid_add_dynasty_perks_effect = {
+	if = {
+        limit = { is_RICE_loaded = yes }
+        add_dynasty_perk = RICE_trans_saharan_trade_legacy_1
+		add_dynasty_perk = RICE_trans_saharan_trade_legacy_2
+    }
+	else = {
+		add_dynasty_perk = hth_warfare_legacy_1
+		add_dynasty_perk = hth_erudition_legacy_1
+	}
+}
+
+# Historic Invasions Fix and Addon, 19_anushtiginid_effects.txt
+anushtiginid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions, 61_argead_effects.txt
+argead_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions, 60_attila_effects.txt
+attila_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 06_ayyubid_effects.txt
+ayyubid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# Historic Invasions Fix and Addon, 36_1_borjigin_effects.txt
+borjigin_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+	add_dynasty_perk = warfare_legacy_3
+	add_dynasty_perk = hth_warfare_legacy_5
+	add_dynasty_perk = law_legacy_1
+	if = {
+		limit = { has_ep1_dlc_trigger = yes } # Royal Court
+		add_dynasty_perk = ep1_culture_legacy_1
+		add_dynasty_perk = ep1_culture_legacy_2
+		add_dynasty_perk = ep1_culture_legacy_3
+	}
+	else = {
+		add_dynasty_perk = hth_erudition_legacy_1
+		add_dynasty_perk = hth_erudition_legacy_2
+		add_dynasty_perk = kin_legacy_2
+	}
+}
+
+# Historic Invasions Fix and Addon, 18_chola_effects.txt
+chola_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 35_eldiguzid_effects.txt
+eldiguzid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 02_fatimid_effects.txt
+fatimid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# Historic Invasions Fix and Addon, 25_gediminid_effects.txt
+gediminid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 03_ghaznavid_effects.txt
+ghaznavid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# Historic Invasions Fix and Addon, 27_jabalid_effects.txt
+jabalid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_guile_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 22_keita_effects.txt
+keita_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 41_liao_effects.txt
+liao_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 11_ludolfinger_effects.txt
+ludolfinger_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions, 62_maurya_effects.txt
+maurya_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_erudition_legacy_1
+	add_dynasty_perk = hth_law_legacy_1
+	if = {
+		limit = { has_ep1_dlc_trigger = yes }
+		add_dynasty_perk = ep1_culture_legacy_1
+	}
+	else = {}
+}
+
+# Historic Invasions Fix and Addon, 21_ottoman_effects.txt
+ottoman_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 31_piast_effects.txt
+piast_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions, 40_rajasa_effects.txt
+rajasa_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 17_rurikid_effects.txt
+rurikid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 27_sabbah_effects.txt
+sabbah_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_guile_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 32_sangama_effects.txt
+sangama_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 04_seljuk_effects.txt
+seljuk_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# Historic Invasions, 16_terteroba_effects.txt
+terteroba_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 01_timurid_effects.txt
+timurid_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+	add_dynasty_perk = warfare_legacy_3
+	add_dynasty_perk = hth_warfare_legacy_5
+	add_dynasty_perk = law_legacy_1
+	if = {
+		limit = { has_ep1_dlc_trigger = yes } # Royal Court
+		add_dynasty_perk = ep1_culture_legacy_1
+		add_dynasty_perk = ep1_culture_legacy_2
+		add_dynasty_perk = ep1_culture_legacy_3
+	}
+	else = {
+		add_dynasty_perk = hth_erudition_legacy_1
+		add_dynasty_perk = hth_erudition_legacy_2
+		add_dynasty_perk = kin_legacy_2
+	}
+}
+
+# Historic Invasions Fix and Addon, 89_toi_effects.txt
+toi_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# Historic Invasions Fix and Addon, 39_wanggiyan_effects.txt
+wanggiyan_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 91_xixia_effects.txt
+xixia_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+	add_dynasty_perk = hth_warfare_legacy_2
+	add_dynasty_perk = hth_warfare_legacy_3
+}
+
+# Historic Invasions Fix and Addon, 20_yelu_effects.txt
+yelu_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions Fix and Addon, 26_yngling_effects.txt
+yngling_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_warfare_legacy_1
+}
+
+# Historic Invasions, 81_zunbil_effects.txt
+zunbil_add_dynasty_perks_effect = {
+	add_dynasty_perk = hth_erudition_legacy_1
+	add_dynasty_perk = hth_erudition_legacy_2
+}
